@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('./assets/nature_background.jpg');
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#current-weather-display-container {
+    padding: 2rem;
+    position: relative;
+}
+
+#scale-changer {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1.5rem;
+    transition: all 350ms;
+}
+
+#scale-changer:hover {
+    transform: scale(110%);
+}
+
+/* #location-info {
+    margin-bottom: 1.5rem;
+} */
+
+#location-city {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#location-region {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+
+#current-weather-condition {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#current-weather-icon {
+    height: 150px;
+}
+
+#current-weather-stats {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#current-weather-temp,
+#current-weather-humidity {
+    font-size: 1.5rem;
+}
+
+
+#city-picker {
+    border-bottom: 2px solid black;
+    width: max-content;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+#search-box {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: none;
+    height: 1.5rem;
+}
+
+#search-icon {
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+footer>p {
+    color: white;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+}
+
+p>a {
+    text-decoration: none;
+    color: white;
+}
